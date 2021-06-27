@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f3"
+    android:orientation="vertical"
+    tools:context=".facial">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imghexagon"
+                android:layout_width="140dp"
+                android:layout_height="212dp"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:src="@drawable/hexagone1" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="120dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/hexagone2" />
+
+
+                <ImageView
+                    android:id="@+id/image_view"
+                    android:layout_width="336dp"
+                    android:layout_height="414dp"
+                    android:layout_marginBottom="54dp"
+                    android:background="@drawable/white_rounded_corner"
+                    android:contentDescription=""
+
+
+                    app:layout_constraintBottom_toTopOf="@+id/button_text"
+                    app:layout_constraintHorizontal_bias="0.493"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.86"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/button_text"
+                    android:layout_width="197dp"
+                    android:layout_height="151dp"
+                    android:layout_marginBottom="120dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/white_hexagone"
+                    android:padding="20dp"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.504"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/done"
+                    android:layout_width="124dp"
+                    android:layout_height="86dp"
+                    android:src="@drawable/ic_baseline_photo_camera_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/button_text"
+                    app:layout_constraintEnd_toEndOf="@+id/button_text"
+                    app:layout_constraintStart_toStartOf="@+id/button_text"
+                    app:layout_constraintTop_toTopOf="@+id/button_text" />
+                </RelativeLayout>
+
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
